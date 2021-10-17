@@ -82,6 +82,18 @@ img {
   }
 }
 
+.logo {
+  color: #212121;
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  text-decoration: none;
+  margin-right: 93px;
+  padding-top: 24px;
+  padding-bottom: 25px;
+}
+
 .header {
   border-bottom: 1px solid #eeeeee;
   /* задаем флекс и центрирование контейнеру */
@@ -275,7 +287,7 @@ img {
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .footer__container {
-    padding: 0 74px 0 61px;
+    padding: 0 74px 0 60px;
   }
 }
 
@@ -325,24 +337,20 @@ img {
   }
 }
 
-.logo {
-  color: #212121;
-  font-family: Raleway, sans-serif;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  text-decoration: none;
-  margin-right: 93px;
-  padding-top: 24px;
-  padding-bottom: 25px;
-}
-
 /* Оформление части лого цвето в футере */
 .footer__logo {
   padding-top: 0;
   padding-bottom: 0;
   margin-bottom: 20px;
-  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   color: #2196f3;
 }
 
@@ -422,6 +430,7 @@ img {
 
 @media screen and (min-width: 1200px) {
   .footer__social-networks {
+    margin-left: 70px;
     margin-right: 93px;
   }
 }
