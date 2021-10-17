@@ -107,6 +107,8 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin: -5px;
+  padding: 0;
 }
 
 /*Навигационная часть*/
