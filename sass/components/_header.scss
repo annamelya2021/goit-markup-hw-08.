@@ -6,14 +6,14 @@
   position: relative;
   display: flex;
   align-items: center;
+  @media screen and (min-width: 1200px) {
+    margin-bottom: -5px;
+  }
+  // margin-bottom: -5px;
 }
 
 .header__logo {
   padding: 16px 0;
-
-  // display: flex;
-  // justify-content: baseline;
-  // text-align: center;
 }
 
 /* Оформление части лого цветом */
@@ -43,7 +43,6 @@
     margin-left: 88px;
   }
   @media screen and (min-width: 1200px) {
-    margin-bottom: -17px;
     margin-left: 93px;
   }
 }
@@ -96,7 +95,7 @@
 
   @media screen and (min-width: 1200px) {
     display: flex;
-    margin-top: 8px;
+    // margin-top: 8px;
     // justify-content: baseline;
   }
 }
