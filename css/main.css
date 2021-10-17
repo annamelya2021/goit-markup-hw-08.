@@ -89,31 +89,17 @@ img {
   font-size: 26px;
   line-height: 1.19;
   text-decoration: none;
-  margin-right: 93px;
   padding-top: 24px;
   padding-bottom: 25px;
 }
 
 .header {
   border-bottom: 1px solid #eeeeee;
-  /* задаем флекс и центрирование контейнеру */
 }
 
+/* задаем флекс и центрирование контейнеру */
 .header__container {
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin: -5px;
-  padding: 0;
-}
-
-/*Навигационная часть*/
-/* задаем флекс и центр */
-.header__nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -131,6 +117,17 @@ img {
   color: #2196f3;
 }
 
+/*Навигационная часть*/
+/* задаем флекс и центр */
+.header__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 @media screen and (max-width: 767px) {
   .header__site-nav,
   .header__contacts-nav {
@@ -143,11 +140,13 @@ img {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    margin-left: 88px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .header__site-nav {
+    margin-bottom: -10px;
     margin-left: 93px;
   }
 }
@@ -344,15 +343,6 @@ img {
   padding-top: 0;
   padding-bottom: 0;
   margin-bottom: 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   color: #2196f3;
 }
 
