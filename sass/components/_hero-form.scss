@@ -4,13 +4,28 @@
   margin-bottom: 30px;
 
   font-weight: 700;
-  font-size: 20px;
+  font-size: 12px;
   line-height: 1.15;
   letter-spacing: 0.03em;
   text-align: center;
 
   color: $title-text-color;
+
+  @media screen and (min-width: 480px) {
+    font-size: 20px;
+  }
 }
+
+// .form__agreement-text,
+// .form__agreement-link {
+//   font-size: 12px;
+// }
+
+// .form__agreement {
+//   font-size: 5px;
+//   line-height: 1.1;
+// }
+
 .form__field {
   position: relative;
   margin-bottom: 28px;
@@ -26,10 +41,13 @@
   left: 0;
   top: -18px;
 
-  font-size: 12px;
+  font-size: 11px;
   line-height: 1.17;
   letter-spacing: 0.01em;
   color: #757575;
+  @media screen and (min-width: 768px) {
+    font-size: 12px;
+  }
 }
 
 .form__input {
@@ -81,6 +99,9 @@
   border-radius: 4px;
 
   transition: border-color $duration $timing-function;
+  // @media screen and (min-width: 768px) {
+  //   font-size: 14px;
+  // }
 
   &::placeholder {
     font-size: 14px;
@@ -99,10 +120,13 @@
   align-items: center;
   padding-left: 12px;
 
-  font-size: 14px;
+  font-size: 10px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: #757575;
+  @media screen and (min-width: 480px) {
+    font-size: 14px;
+  }
 
   &::before {
     margin-right: 8px;
@@ -119,6 +143,7 @@
   &::before {
     background-color: $acsent-color;
     background-image: url(../img/check.svg);
+
     background-size: cover;
     border-radius: 2px;
   }
