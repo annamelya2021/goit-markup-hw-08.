@@ -558,6 +558,7 @@ img {
 @media screen and (min-width: 320px) {
   .footer__form-input {
     margin-bottom: 20px;
+    min-width: 300px;
   }
 }
 
@@ -1911,9 +1912,16 @@ img {
 /* Заголовки в карточках портфолио */
 .portfolio__title {
   margin-bottom: 4px;
-  font-size: 18px;
+  font-size: 14px;
   line-height: 2;
-  letter-spacing: 0.04em;
+  letter-spacing: 0.02em;
+}
+
+@media screen and (min-width: 340px) {
+  .portfolio__title {
+    font-size: 18px;
+    letter-spacing: 0.04em;
+  }
 }
 
 @media screen and (min-width: 1200px) {
