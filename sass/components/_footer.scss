@@ -3,9 +3,6 @@
 .footer {
   padding-top: 60px;
   padding-bottom: 60px;
-
-  // display: flex;
-  // justify-content: space-between;
   background-color: $footer-bgcolor;
 
   @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -58,8 +55,6 @@
 .footer__logo {
   padding-top: 0;
   padding-bottom: 0;
-  // margin-bottom: 20px;
-
   color: $acsent-color;
 
   &--white {
@@ -127,9 +122,20 @@
   }
 }
 
+.footer__title {
+  margin-bottom: 20px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #fff;
+}
 .footer__socials-list {
   display: flex;
 }
+
 .footer__socials-item:not(:last-child) {
   margin-right: 10px;
 }
@@ -164,16 +170,6 @@
   }
 }
 
-.footer__title {
-  margin-bottom: 20px;
-
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: #fff;
-}
 .footer__form {
   display: flex;
 
@@ -188,14 +184,19 @@
   }
 }
 
+.subscribe__field {
+  width: 100%;
+  text-align: center;
+}
 .footer__form-input {
   margin-right: 12px;
+  margin-bottom: 20px;
 
   width: 100%;
   height: 50px;
   padding: 16px 15px;
 
-  font-size: 16px;
+  font-size: 18px;
   line-height: 1.25;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.3);
@@ -206,13 +207,8 @@
 
   transition: border-color $duration $timing-function;
 
-  @media screen and (min-width: 320px) {
-    margin-bottom: 20px;
-    min-width: 300px;
-  }
   @media screen and (min-width: 768px) {
     width: 450px;
-    margin-bottom: 20px;
   }
 
   @media screen and (min-width: 1200px) {

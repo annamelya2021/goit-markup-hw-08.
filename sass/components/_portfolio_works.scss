@@ -17,20 +17,6 @@
 //   flex-basis: calc(100% / 3 - 30px);
 // }
 
-.portfolio__link {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  transition: box-shadow $duration $timing-function;
-
-  &:hover,
-  &:focus {
-    outline: none;
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-      1px 4px 6px rgba(0, 0, 0, 0.16);
-  }
-}
-
 .portfolio__item {
   @media screen and (max-width: 767px) {
     width: 100%;
@@ -101,7 +87,7 @@
 .portfolio__title {
   margin-bottom: 4px;
 
-  font-size: 14px;
+  font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
   // @media screen and (min-width: 340px) {
@@ -112,6 +98,20 @@
   // @media screen and (min-width: 1200px) {
   //   letter-spacing: 0.06em;
   // }
+}
+
+.portfolio__link {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  transition: box-shadow $duration $timing-function;
+
+  &:hover,
+  &:focus {
+    outline: none;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
 }
 /* Оформление текста див в карточке потфлоние и нрижний бордер */
 .portfolio__content {
